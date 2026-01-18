@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📕 FRONTEND README  
+📁 Repo: `neurostack-frontend`
 
-## Getting Started
+---
 
-First, run the development server:
+```md
+# 🎨 NeuroStack Frontend — SaaS Support Copilot UI
 
-```bash
+This repository contains the **frontend** for **NeuroStack – SaaS Support Copilot**, built using **Next.js** and **Tailwind CSS**.
+
+The UI allows users to:
+- Ask natural language questions
+- View AI-generated answers
+- See source references for transparency
+
+---
+
+## 🖥️ Features
+
+- Modern **dark UI** with magenta & blue gradients
+- Responsive design
+- Clean UX for Q&A
+- Source attribution display
+- Error handling for backend connection
+
+---
+
+## 🧱 Tech Stack
+
+- **Next.js (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vercel** for deployment
+
+---
+
+## 📂 Project Structure
+
+frontend/
+├── app/
+│ └── page.tsx # Main UI page
+├── public/
+├── styles/
+├── package.json
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## 🔗 Backend Integration
+
+The frontend sends requests to the backend:
+
+```ts
+POST /query
+{
+  "question": "How do I create a project?"
+}
+Local Backend URL
+ts
+Copy code
+http://127.0.0.1:8000/query
+🚀 Run Locally
+bash
+Copy code
+cd frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+arduino
+Copy code
+http://localhost:3000
+🌐 Deployment
+The frontend is deployed on Vercel.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔗 Live Demo:
+https://neurostack-frontend1.vercel.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+⚠️ Deployment Note
+Local backend works perfectly with the frontend
 
-## Learn More
+Hugging Face Spaces restrict direct REST access
 
-To learn more about Next.js, take a look at the following resources:
+For demos, frontend is connected to a local backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Architecture is cloud-ready and scalable
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👤 Author
+Shivanshu Sinha
+Frontend & GenAI Developer
+NeuroStack GenAI Build Sprint
